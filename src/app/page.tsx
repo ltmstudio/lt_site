@@ -1,103 +1,169 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
+import Services from "./components/services";
+import Stages from "./components/stages";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Gallery from "./components/worksgGallery";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const [isImageBackground, setIsImageBackground] = useState(true);
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
+  const [activeMenuItem, setActiveMenuItem] = useState<number>(0);
+  const [currentStage, setCurrentStage] = useState<number | null>(null);
+  const toggleAccordion = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+    setActiveMenuItem(index);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    // Сбрасываем currentStage, если выбран другой пункт меню
+    if (index !== 2) {
+      setCurrentStage(null);
+    }
+    setIsImageBackground(index === 0);
+  };
+  const stages = [
+    {
+      title: "БРИФ",
+      description:
+        "Согласование брифа с заказчиком, обсуждение заказа, назначение срока выполнения. ДИЗАЙН ОТДЕЛ",
+      icon: "/icons/brief.svg",
+      position:
+        "top-[-5%] left-[60%] md:top-[0%] md:left-[40%] lg:top-[-5%] lg:left-[-30%]",
+      color: "skyGrad",
+      delay: 0,
+    },
+    {
+      title: "ДИЗАЙН ОТДЕЛ",
+      description:
+        "Поиск оригинальных идей, Отбор лучших идей по брифу и эстетическим критериям",
+      icon: "/icons/design.svg",
+      position: "lg:top-[25%] lg:left-[-10%] md:top-[30%] md:left-[55%] ",
+      color: "yellGrad",
+      delay: 300,
+    },
+    {
+      title: "УТВЕРЖДЕНИЕ",
+      description: "Согласование с заказчиком, Внесение правок и пожеланий.",
+      icon: "/icons/approve.svg",
+      position: "lg:top-[65%] lg:left-[-10%] md:top-[62%] md:left-[55%] ",
+      color: "blueGrad",
+      delay: 600,
+    },
+    {
+      title: "ВОПЛОЩЕНИЕ",
+      description: "Исполнение заказа с учетом всех пожеланий заказчика",
+      icon: "/icons/realisation.svg",
+      position:
+        "lg:bottom-[-10%] lg:left-[-25%] md:bottom-[-5%] md:left-[40%] ",
+      color: "pinkGrad",
+      delay: 900,
+    },
+  ];
+
+  const menuItems = [
+    {
+      title: "РЕКЛАМНО - ПРОИЗВОДСТВЕННАЯ КОМПАНИЯ",
+      content:
+        "Мы – молодая компания, основанная в 2020 году, обладающая современным высокотехнологичным, прецизионным, высокопроизводительным оборудованием и опытными специалистами имеющими стаж в данной сфере не менее 10 лет. Мы ориентированы на стабильную работу с крупным и надежным заказчиком и со своей стороны гарантируем заказчику непревзойденное качество продукции и своевременные поставки в любую точку Туркменистана. Мы, в первую очередь производственная компания. Все что мы предлагаем клиенту – сделано в наших собственных цехах. Процесс производства контролируется от поставки материала до отгрузки на склад заказчику.",
+    },
+    {
+      title: "Услуги",
+      content: "",
+    },
+    {
+      title: "Этапы работы",
+      content: (
+        <div>
+          <ul className="list-disc pl-5">
+            {stages.map((stage, index) => (
+              <li key={index}>
+                <button
+                  className="text-gray-600 hover:underline"
+                  onClick={() => setCurrentStage(index)}
+                >
+                  {stage.title}
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      ),
+    },
+    {
+      title: "Производственные возможности",
+      content:
+        "Мы контролируем весь процесс от поставки материалов до отгрузки.",
+    },
+    {
+      title: "Наши работы",
+      content:
+        "Мы контролируем весь процесс от поставки материалов до отгрузки.",
+    },
+  ];
+
+  return (
+    <div
+      className={`h-full lg:h-screen flex flex-col justify-between mainContainer   ${
+        isImageBackground ? "homeBg bg-center" : "bg-white"
+      }`}
+    >
+      <div className="flex flex-grow h-full overflow-hidden">
+        <div className="border-l-3 h-[99%]"></div>
+        <div className="flex flex-col h-full w-full divider">
+          <Header isImageBackground={isImageBackground} />
+          <main className="h-full flex-grow lg:h-full align-center">
+            <div className="flex align-center flex-col w-full sm:flex-col md:flex-col lg:flex-row 2xl:flex-row gap-5">
+              <div className="flex-grow sm:w-full md:w-full lg:w-3/12 flex menuCont">
+                <nav className="h-full max-h-[calc(100vh-150px)] overflow-y-auto pr-2">
+                  <ul className="">
+                    {menuItems.map((item, index) => (
+                      <li key={index} className="border-b-3 border-black-500">
+                        <button
+                          className="w-full text-left py-3 font-sans heading font-medium uppercase"
+                          onClick={() => toggleAccordion(index)}
+                        >
+                          <h2>{item.title}</h2>
+                        </button>
+                        {activeIndex === index && (
+                          <div
+                            className={`text-md font-thin overflow-hidden transition-all duration-500 ease-in-out ${
+                              activeIndex === index
+                                ? "max-h-[1000px] pb-3"
+                                : "max-h-0"
+                            } ${
+                              isImageBackground
+                                ? "text-gray-100 opacity-70"
+                                : "text-gray-800 opacity-70"
+                            }`}
+                          >
+                            {item.content}
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
+              <div className="w-full sm:w-full md:w-full lg:w-8/12 flex flex-col">
+                {activeMenuItem === 0 && <div></div>}
+                {activeMenuItem === 1 && <Services />}
+                {activeMenuItem === 2 && (
+                  <Stages currentStage={currentStage} stages={stages} />
+                )}
+                {activeMenuItem === 3 && (
+                  <div>Производственные возможности</div>
+                )}
+                {activeMenuItem === 4 && (
+                 < Gallery/>
+                )}
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <Footer></Footer>
     </div>
   );
 }
