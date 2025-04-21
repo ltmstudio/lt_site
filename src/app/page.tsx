@@ -8,7 +8,6 @@ import Footer from "./components/footer";
 import Gallery from "./components/worksgGallery";
 import { useLanguage } from "./context/langContext";
 
-
 export default function Home() {
   const { t } = useLanguage();
   const [isImageBackground, setIsImageBackground] = useState(true);
@@ -138,7 +137,7 @@ export default function Home() {
 
   return (
     <div
-      className={`h-auto w-full lg:h-screen md:h-full sm:h-full flex flex-col justify-between mainContainer   ${
+      className={`h-full w-full lg:h-screen md:h-full sm:h-full flex flex-col justify-between mainContainer   ${
         isVideoBackground
           ? "homeVideo theme-dark"
           : isImageBackground
@@ -158,12 +157,14 @@ export default function Home() {
         </video>
       )}
       <div
-        className={`flex flex-grow h-full  overflow-y-hidden overflow-x-visible  ${isAnimating ? "animate-fade" : ""}`}
+        className={`lg:h-[90%] md:h-full sm:h-full h-full flex ${
+          isAnimating ? "animate-fade" : ""
+        }`}
       >
         <div className="border-l-3 h-[99%]"></div>
         <div className="flex flex-col h-full w-full divider">
           <Header />
-          <main className="h-full flex-grow lg:h-full align-center">
+          <main className="h-full flex-grow lg:h-full align-center overflow-y-hidden">
             <section className="mainContent flex align-center flex-col w-full sm:flex-col md:flex-col lg:flex-row 2xl:flex-row gap-5">
               <div
                 className="flex-grow sm:w-full md:w-full lg:w-3/12 flex
@@ -196,7 +197,13 @@ export default function Home() {
                   </ul>
                 </nav>
               </div>
-              <div className="w-full h-full sm:w-full md:w-full lg:w-8/12 ]">
+              <div
+                className={`w-full sm:w-full md:w-full lg:w-8/12 ${
+                  activeMenuItem === 4
+                    ? "w-full max-h-[calc(100vh-150px)] overflow-y-auto"
+                    : ""
+                }`}
+              >
                 {activeMenuItem === 0 && <div></div>}
                 {activeMenuItem === 1 && <Services />}
                 {activeMenuItem === 2 && (
