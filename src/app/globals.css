@@ -9,13 +9,6 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --contentColor: #e4e4e4;
-  --button-bg: #ffffff;
-  --button-text: #000000;
-  --button-border: #cccccc;
-  --button-hover-bg: #f5f5f5;
   --blueGrad: linear-gradient(
     90deg,
     rgba(55, 185, 236, 1) 0%,
@@ -45,31 +38,57 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;
-    --foreground: #0a0a0a;
-    --contentColor: #5e5b5b;
-    --button-color: #171717; /* Основной цвет текста */
-    --button-hover-color: #555555;
-    --button-bg: #000000;
-    --button-text: #ffffff !important;
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+    --button-bg: #333333;
+    --button-text: #ffffff;
     --button-border: #444444;
-    --button-hover-bg: #ffffff;
+    --button-hover-bg: #444444;
+    --button-hover-text: #ffffff;
   }
+} */
+.theme-light {
+  --background: #ffffff;
+  --foreground: #171717;
+  --button-bg: #ffffff;
+  --button-text: #000000;
+  --button-border: #cccccc;
+  --button-hover-bg: #f5f5f5;
+  --button-hover-text: #333333;
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: clamp(1rem, 1.2vw, 1rem);
+  font-weight: normal;
+  overflow-x: hidden;
+}
+/* Темная тема */
+.theme-dark {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --button-bg: #333333;
+  --button-text: #ffffff;
+  --button-border: #444444;
+  --button-hover-bg: #444444;
+  --button-hover-text: #ffffff;
 }
 .homeBg {
   background-image: url("/banners/home-ban.jpg");
   background-size: cover;
   background-position: center;
-  color: var(--background);
-  background-color: var(--foregraound);
-  --button-color: #ffffff; 
-  --button-hover-color: #cccccc;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+.homeVideo {
+  color: var(--foreground);
 }
 h1 {
-  font-weight: 700; 
-  line-height: 1.2; 
+  font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 1rem;
   font-family: "Exo", Arial, Helvetica, sans-serif;
 }
@@ -115,14 +134,7 @@ h6 {
 .svgCOlor {
   color: var(--background);
 }
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: clamp(1rem, 1.2vw, 1rem);
-  font-weight: normal;
-  overflow: hidden;
-}
+
 .accordion-content {
   max-height: 0;
   overflow: hidden;
@@ -155,7 +167,7 @@ body {
 * {
   box-sizing: border-box;
 }
-.menuCont {
+.mainContent {
   padding: 2.5% 0;
 }
 .blueGrad {
@@ -175,14 +187,15 @@ body {
 }
 button,
 a {
-  text-decoration: none; 
+  text-decoration: none;
   color: var(--button-color);
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
+  background-color: transparent;
 }
 
 button:hover,
 a:hover {
-  color: var(--button-hover-color);
+  color: var(--button-hover-text);
   cursor: pointer; /* Меняет цвет на черный при наведении */
 }
 button:active,
@@ -208,11 +221,71 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.text-white {
+  color: #ffffff !important;
+  background-color: #000000;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade {
+  animation: fade 0.5s ease-in-out;
+}
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+/* .animate-fadeLeft {
+  animation: fadeLeft 0.5s ease-in-out forwards;
+} */
+.animate-fadeRight {
+  animation: fadeRight 0.5s ease-in-out forwards;
+}
+.gallery-item {
+  opacity: 0; /* Скрываем элементы по умолчанию */
+  transform: translateY(20px); /* Начальное смещение */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
 @media only screen and (min-device-width: 769px) and (max-device-width: 1440px) {
-  .sliderServices {
-    /* padding: 5% 0; */
-  }
   .menuCont {
     padding: 5% 0;
   }
@@ -224,6 +297,9 @@ a:hover {
 @media screen and (max-width: 768px) {
   .StagesCon {
     padding: 5% 0;
+  }
+  .logoFooter {
+    padding-top: 5%;
   }
 }
 @media screen and (min-width: 2560px) {

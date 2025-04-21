@@ -1,0 +1,15 @@
+{
+  "menu": {
+    "company": "Reklama we Önümçilik Kompaniýasy",
+    "services": "Hyzmatlar",
+    "stages": "Iş Etaplary",
+    "capabilities": "Önümçilik Mümkinçilikleri",
+    "works": "Biziň Işlerimiz"
+  },
+  "stages": {
+    "brief": "BRIF",
+    "design": "DIZAÝN BÖLÜMI",
+    "approval": "MAKULLAMA",
+    "realisation": "AMALA AŞYRMA"
+  }
+}

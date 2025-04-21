@@ -34,7 +34,7 @@ export default function Services() {
   
 
   return (
-    <div className="w-screen overflow-x-visible relative sliderServices">
+    <section className="w-screen overflow-x-visible relative sliderServices">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, Mousewheel]}
         mousewheel={true}
@@ -85,13 +85,13 @@ export default function Services() {
                 backgroundImage: `url(${service.image})`,
               }}
             >
-              <h3 className="text-4xl font-bold text-white uppercase">
+              <h3 className="text-4xl font-bold uppercase">
                 {service.title}
               </h3>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 }

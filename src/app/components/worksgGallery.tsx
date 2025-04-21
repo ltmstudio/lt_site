@@ -12,16 +12,14 @@ export default function Gallery() {
       : works.filter((work) => work.tags.includes(selectedTag));
 
   return (
-    <section className="p-4">
+    <section className="p-4 overflow-y-auto max-h-[calc(100vh-150px)">
       <div className="flex flex-wrap gap-2 mb-6">
         {tags.map((tag) => (
           <button
             key={tag}
             onClick={() => setSelectedTag(tag)}
             className={`px-3 py-1 rounded-full border transition ${
-                selectedTag === tag
-                ? "bg-[var(--button-bg)] text-white"
-                : "bg-[var(--button-hover-bg)] text-[var(--button-text)] border-[var(--button-border)] hover:bg-[var(--button-hover-bg)]"
+              selectedTag === tag ? "text-white font-thin" : "font-thin"
             }`}
           >
             {tag}
@@ -31,10 +29,13 @@ export default function Gallery() {
 
       <div className="h-auto overflow-y-auto">
         <div className="columns-1 sm:columns-2 md:columns-4 gap-4 space-y-4">
-          {filteredWorks.map((work) => (
+          {filteredWorks.map((work, index) => (
             <div
               key={work.id}
-              className="break-inside-avoid  rounded-lg bg-white"
+              className="break-inside-avoid rounded-lg bg-white opacity-0 animate-fadeIn"
+              style={{
+                animationDelay: `${index * 0.2}s`, // Задержка для каждой карточки
+              }}
             >
               <img
                 src={work.image}

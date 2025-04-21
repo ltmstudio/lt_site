@@ -1,0 +1,15 @@
+{
+    "menu": {
+      "company": "Advertising and Production Company",
+      "services": "Services",
+      "stages": "Work Stages",
+      "capabilities": "Production Capabilities",
+      "works": "Our Works"
+    },
+    "stages": {
+      "brief": "BRIEF",
+      "design": "DESIGN DEPARTMENT",
+      "approval": "APPROVAL",
+      "realisation": "REALISATION"
+    }
+  }
