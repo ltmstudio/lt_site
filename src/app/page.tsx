@@ -164,7 +164,7 @@ export default function Home() {
         <div className="border-l-4 h-[99%]"></div>
         <div className="flex flex-col h-full w-full divider">
           <Header />
-          <main className="h-full flex-grow lg:h-full align-center overflow-y-hidden">
+          <main className="h-full flex-grow lg:h-full align-center overflow-hidden">
             <section className="mainContent flex align-center flex-col w-full sm:flex-col md:flex-col lg:flex-row 2xl:flex-row gap-5">
               <div
                 className="flex-grow sm:w-full md:w-full lg:w-3/12 flex
@@ -209,8 +209,8 @@ export default function Home() {
                 {activeMenuItem === 2 && (
                   <Stages currentStage={currentStage} stages={stages} />
                 )}
-                {activeMenuItem === 3 && <div></div>}
                 {activeMenuItem === 4 && <Gallery />}
+                {activeMenuItem === 3 && <div></div>}
               </div>
             </section>
           </main>

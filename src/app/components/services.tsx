@@ -6,32 +6,47 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { useState } from "react";
-import { Navigation, Pagination, Autoplay, EffectCreative, Mousewheel } from 'swiper/modules';
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectCreative,
+  Mousewheel,
+} from "swiper/modules";
 
 export default function Services() {
   const services = [
     {
       title: "Объёмные буквы",
       description: "Описание услуги 1",
-      image: "/banners/service.png",
+      image: "/services/banner.jpg",
     },
     {
       title: "Объёмные буквы",
       description: "Описание услуги 2",
-      image: "/banners/service.png",
+      image: "/services/banner1.jpg",
     },
     {
       title: "Объёмные буквы",
       description: "Описание услуги 3",
-      image: "/banners/service.png",
+      image: "/services/banner2.jpg",
     },
     {
       title: "Объёмные буквы",
       description: "Описание услуги 3",
-      image: "/banners/service.png",
+      image: "/services/banner5.jpg",
+    },
+    {
+      title: "Объёмные буквы",
+      description: "Описание услуги 3",
+      image: "/services/banner6.jpg",
+    },
+    {
+      title: "Объёмные буквы",
+      description: "Описание услуги 3",
+      image: "/services/banner44.jpg",
     },
   ];
-  
 
   return (
     <section className="w-screen overflow-x-visible relative sliderServices">
@@ -85,9 +100,7 @@ export default function Services() {
                 backgroundImage: `url(${service.image})`,
               }}
             >
-              <h3 className="text-4xl font-bold uppercase">
-                {service.title}
-              </h3>
+              <h3 className="text-4xl font-bold uppercase">{service.title}</h3>
             </div>
           </SwiperSlide>
         ))}
