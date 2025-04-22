@@ -53,10 +53,6 @@ export default function Services() {
       <Swiper
         modules={[Navigation, Pagination, Autoplay, Mousewheel]}
         mousewheel={true}
-        // navigation
-        // pagination={{
-        //   clickable: true,
-        // }}
         autoplay={{
           delay: 3500, // Задержка между слайдами в миллисекундах
           disableOnInteraction: false, // Автопрокрутка не останавливается при взаимодействии
@@ -95,12 +91,17 @@ export default function Services() {
         {services.map((service, index) => (
           <SwiperSlide key={index}>
             <div
-              className="aspect-1/1 bg-cover bg-center flex items-end justify-center py-15"
+              className="aspect-1/1 bg-cover bg-center flex items-end justify-center relative group"
               style={{
                 backgroundImage: `url(${service.image})`,
               }}
             >
-              <h3 className="text-4xl font-bold uppercase">{service.title}</h3>
+              {/* Градиент */}
+              <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/70 to-transparent transition-all duration-300 group-hover:h-1/2"></div>
+              {/* Название */}
+              <h3 className="text-4xl font-bold uppercase text-white z-10 transition-transform duration-300 group-hover:translate-y-[-10px] pb-7">
+                {service.title}
+              </h3>
             </div>
           </SwiperSlide>
         ))}

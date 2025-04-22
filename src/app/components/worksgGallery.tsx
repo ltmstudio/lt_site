@@ -19,7 +19,7 @@ export default function Gallery() {
             key={tag}
             onClick={() => setSelectedTag(tag)}
             className={`px-3 py-1 rounded-full border transition ${
-              selectedTag === tag ? "text-white font-thin" : "font-thin"
+              selectedTag === tag ? "white font-thin" : "font-thin"
             }`}
           >
             {tag}

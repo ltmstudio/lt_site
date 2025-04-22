@@ -137,7 +137,7 @@ export default function Home() {
 
   return (
     <div
-      className={`h-full w-full lg:h-screen md:h-full sm:h-full flex flex-col justify-between mainContainer   ${
+      className={`min-h-screen w-full relative lg:h-screen md:h-full sm:min-h-screen flex flex-col justify-between mainContainer   ${
         isVideoBackground
           ? "homeVideo theme-dark"
           : isImageBackground
@@ -146,15 +146,18 @@ export default function Home() {
       }`}
     >
       {isVideoBackground && (
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-        >
-          <source src="/videos/video_services.mp4" type="video/mp4" />
-          Ваш браузер не поддерживает видео.
-        </video>
+        <>
+          <video
+            autoPlay
+            loop
+            muted
+            className="h-full w-full absolute top-0 left-0  object-cover z-[-2]"
+          >
+            <source src="/videos/video_services.mp4" type="video/mp4" />
+            Ваш браузер не поддерживает видео.
+          </video>
+          <div className="absolute top-0 left-0 w-full h-full z-[-1] bg-gradient-to-b from-black/60 to-black/60" />
+        </>
       )}
       <div
         className={`lg:h-[90%] md:h-full sm:h-full h-full flex ${
@@ -163,7 +166,7 @@ export default function Home() {
       >
         <div className="border-l-4 h-[99%]"></div>
         <div className="flex flex-col h-full w-full divider">
-          <Header />
+          <Header onLogoClick={() => setActiveMenuItem(0)} />
           <main className="h-full flex-grow lg:h-full align-center overflow-hidden">
             <section className="mainContent flex align-center flex-col w-full sm:flex-col md:flex-col lg:flex-row 2xl:flex-row gap-5">
               <div
@@ -182,7 +185,7 @@ export default function Home() {
                         </button>
                         {activeIndex === index && (
                           <div
-                            className={`text-md font-thin  transition-all duration-500 ease-in-out ${
+                            className={`text-md font-thin menuText transition-all duration-500 ease-in-out ${
                               activeIndex === index
                                 ? "max-h-[1000px] pb-3"
                                 : "max-h-0"
@@ -216,7 +219,6 @@ export default function Home() {
           </main>
         </div>
       </div>
-
       <Footer isAnimating={isAnimating}></Footer>
     </div>
   );
