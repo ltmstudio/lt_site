@@ -64,7 +64,8 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: clamp(1rem, 1.2vw, 1rem);
   font-weight: normal;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 /* Темная тема */
 .theme-dark {
