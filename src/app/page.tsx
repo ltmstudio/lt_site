@@ -161,7 +161,7 @@ export default function Home() {
           isAnimating ? "animate-fade" : ""
         }`}
       >
-        <div className="border-l-3 h-[99%]"></div>
+        <div className="border-l-4 h-[99%]"></div>
         <div className="flex flex-col h-full w-full divider">
           <Header />
           <main className="h-full flex-grow lg:h-full align-center overflow-y-hidden">

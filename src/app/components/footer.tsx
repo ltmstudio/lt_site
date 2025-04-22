@@ -65,7 +65,7 @@ const contactInfo = [
 export default function Footer({ isAnimating }: { isAnimating: boolean }) {
   return (
     <footer
-      className={`lg:h-[10%] md:h-full sm:h-full h-full border-t-3  border-black-500 shrink-0 lg:sticky lg:bottom-0  px-4 py-6 flex flex-col lg:flex-row md:flex-col sm:flex-col justify-between lg:justify-between  md:justify-center sm:justify-center items-center ${
+      className={`lg:h-[10%] md:h-full sm:h-full h-full border-t-4  border-black-500 shrink-0 lg:sticky lg:bottom-0  px-4 py-6 flex flex-col lg:flex-row md:flex-col sm:flex-col justify-between lg:justify-between  md:justify-center sm:justify-center items-center ${
         isAnimating ? "animate-fadeIn" : "opacity-100"
       }`}
     >
