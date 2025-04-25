@@ -69,10 +69,6 @@ export default function RootLayout({
           content="Lebizli Turkmen предлагает полный спектр рекламно-производственных услуг в Туркменистане."
         />
         <meta name="twitter:image" content="/logo-letters.svg" />
-        <meta
-          name="google-site-verification"
-          content="fehIcvCSrpAyzsP6Pmg-C5Kim9juRPYB7XroR8ZzoCQ"
-        />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-R21XWD21WL"
@@ -84,8 +80,9 @@ export default function RootLayout({
       gtag('js', new Date());
       gtag('config', 'G-R21XWD21WL');
     `}
-        </script>
+        </script><meta name="google-site-verification" content="fehIcvCSrpAyzsP6Pmg-C5Kim9juRPYB7XroR8ZzoCQ" />
       </head>
+ </head>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -95,3 +92,4 @@ export default function RootLayout({
     </html>
   );
 }
+
