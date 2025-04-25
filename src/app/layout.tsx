@@ -80,9 +80,12 @@ export default function RootLayout({
       gtag('js', new Date());
       gtag('config', 'G-R21XWD21WL');
     `}
-        </script><meta name="google-site-verification" content="fehIcvCSrpAyzsP6Pmg-C5Kim9juRPYB7XroR8ZzoCQ" />
+        </script>
+        <meta
+          name="google-site-verification"
+          content="fehIcvCSrpAyzsP6Pmg-C5Kim9juRPYB7XroR8ZzoCQ"
+        />
       </head>
- </head>
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -92,4 +95,3 @@ export default function RootLayout({
     </html>
   );
 }
-
