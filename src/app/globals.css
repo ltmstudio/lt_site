@@ -291,8 +291,8 @@ a:hover {
   animation: fadeRight 0.5s ease-in-out forwards;
 }
 .gallery-item {
-  opacity: 0; 
-  transform: translateY(20px); 
+  opacity: 0;
+  transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -328,11 +328,9 @@ a:hover {
     padding-top: 2.5%;
     padding-bottom: 0;
   }
-  /* .videoban {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  } */
+  .contantInfo {
+    font-size: clamp(0.875rem, 1.5vw, 0.8rem);
+  }
 }
 @media screen and (min-width: 2560px) {
   body {

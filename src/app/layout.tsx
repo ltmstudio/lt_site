@@ -30,17 +30,14 @@ export default function RootLayout({
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Lebizli Turkmen" />
-
         <meta
           name="description"
           content="Lebizli Turkmen — рекламно-производственная компания в Туркменистане. Мы предлагаем полный цикл производства рекламной продукции: от наружной рекламы до POS-материалов."
         />
-
         <meta
           name="keywords"
           content="рекламно-производственная компания, наружная реклама, изготовление вывесок, POS-материалы, производство рекламы Туркменистан, брендированная продукция"
         />
-
         <link rel="canonical" href="https://lebizliturkmen.com" />
 
         {/* <!-- Favicon --> */}
@@ -58,7 +55,7 @@ export default function RootLayout({
           property="og:description"
           content="Lebizli Turkmen предлагает производство наружной рекламы и брендированной продукции. Надёжность, качество, сроки."
         />
-        <meta property="og:image" content="/logo-letters.svg" />
+        <meta property="og:image" content="/banners/logo-letters.svg" />
         <meta property="og:url" content="https://lebizliturkmen.com" />
 
         {/* <!-- Twitter Card --> */}
@@ -72,6 +69,22 @@ export default function RootLayout({
           content="Lebizli Turkmen предлагает полный спектр рекламно-производственных услуг в Туркменистане."
         />
         <meta name="twitter:image" content="/logo-letters.svg" />
+        <meta
+          name="google-site-verification"
+          content="fehIcvCSrpAyzsP6Pmg-C5Kim9juRPYB7XroR8ZzoCQ"
+        />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R21XWD21WL"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-R21XWD21WL');
+    `}
+        </script>
       </head>
 
       <body

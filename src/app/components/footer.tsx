@@ -69,7 +69,7 @@ export default function Footer({ isAnimating }: { isAnimating: boolean }) {
         isAnimating ? "animate-fadeIn" : "opacity-100"
       }`}
     >
-      <div className="logoFooter basis-4/12 lg:basis-4/12 w-full md:w-full sm:w-full flex-col flex gap-3 items-start lg:items-start md:items-center sm:items-start ">
+      <div className="logoFooter basis-3/12 lg:basis-3/12 w-full md:w-full sm:w-full flex-col flex gap-3 items-start lg:items-start md:items-center sm:items-start ">
         <a
           href="https://ltm.studio/ru"
           target="_blank"
@@ -85,15 +85,15 @@ export default function Footer({ isAnimating }: { isAnimating: boolean }) {
           height={100}
         />
       </div>
-      <div className=" basis-8/12 lg:basis-8/12 md:w-full sm:w-full flex justify-end">
-        <div className="flex flex-col lg:flex-row md:flex-row sm:flex-col gap-1">
+      <div className="basis-9/12 lg:basis-9/12 md:w-full sm:w-full flex justify-end">
+        <div className="flex flex-col lg:flex-row md:flex-row sm:flex-col gap-1 items-center text-right">
           {contactInfo.map((item, index) => (
             <a
               key={index}
-              className="flex items-center lg:justify-center md:justify-center lg:justify-start w-full h-fit"
+              className="flex items-center lg:justify-end md:justify-end sm:justify-end w-full h-fit"
               href={item.link}
             >
-              <div className="flex gap-3">
+              <div className="flex gap-3 contantInfo">
                 {item.icon}
                 {item.text}
               </div>
