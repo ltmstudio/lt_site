@@ -34,7 +34,7 @@ export default function Stages({
         {stages.map((stage, index) => (
           <div
             key={index}
-            className={`absolute ${stage.position} max-w-[90%] transition-all duration-700 ease-out opacity-100`}
+            className={`absolute ${stage.position} max-w-[100%] transition-all duration-700 ease-out opacity-100`}
           >
             <div className="flex items-start gap-4">
               <div

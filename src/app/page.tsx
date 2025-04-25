@@ -32,10 +32,10 @@ export default function Home() {
     {
       title: "БРИФ",
       description:
-        "Согласование брифа с заказчиком, обсуждение заказа, назначение срока выполнения. ДИЗАЙН ОТДЕЛ",
+        "Согласование брифа с заказчиком, обсуждение заказа, назначение срока выполнения",
       icon: "/icons/brief.svg",
       position:
-        "top-[-5%] left-[60%] md:top-[-5%] md:left-[-5%] lg:top-[-5%] lg:left-[-30%]",
+        "top-[-5%] left-[60%] md:top-[-5%] md:left-[-5%] lg:top-[-7%] lg:left-[-30%]",
       color: "skyGrad",
       delay: 0,
     },
@@ -44,7 +44,7 @@ export default function Home() {
       description:
         "Поиск оригинальных идей, Отбор лучших идей по брифу и эстетическим критериям",
       icon: "/icons/design.svg",
-      position: "lg:top-[25%] lg:left-[-10%] md:top-[20%] md:left-[5%] ",
+      position: "lg:top-[30%] lg:left-[-10%] md:top-[20%] md:left-[5%] ",
       color: "yellGrad",
       delay: 300,
     },
@@ -61,7 +61,7 @@ export default function Home() {
       description: "Исполнение заказа с учетом всех пожеланий заказчика",
       icon: "/icons/realisation.svg",
       position:
-        "lg:bottom-[-10%] lg:left-[-25%] md:bottom-[-5%] md:left-[-5%] ",
+        "lg:bottom-[-20%] lg:left-[-30%] md:bottom-[-5%] md:left-[-5%] ",
       color: "pinkGrad",
       delay: 900,
     },

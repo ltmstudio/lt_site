@@ -1,5 +1,4 @@
 @import "tailwindcss";
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); */
 
 @font-face {
   font-family: "Exo";
@@ -38,17 +37,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ffffff;
-    --button-bg: #333333;
-    --button-text: #ffffff;
-    --button-border: #444444;
-    --button-hover-bg: #444444;
-    --button-hover-text: #ffffff;
-  }
-} */
 .theme-light {
   --background: #ffffff;
   --foreground: #171717;
@@ -298,15 +286,13 @@ a:hover {
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-in-out forwards;
 }
-/* .animate-fadeLeft {
-  animation: fadeLeft 0.5s ease-in-out forwards;
-} */
+
 .animate-fadeRight {
   animation: fadeRight 0.5s ease-in-out forwards;
 }
 .gallery-item {
-  opacity: 0; /* Скрываем элементы по умолчанию */
-  transform: translateY(20px); /* Начальное смещение */
+  opacity: 0; 
+  transform: translateY(20px); 
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -315,7 +301,14 @@ a:hover {
     padding: 5% 0;
   }
   h3 {
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    line-height: 1.2;
+  }
+  .StagesBan {
+    width: 250px;
+  }
+  p {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.2;
   }
 }
