@@ -4,12 +4,181 @@
     "services": "Hyzmatlar",
     "stages": "Iş Etaplary",
     "capabilities": "Önümçilik Mümkinçilikleri",
-    "works": "Biziň Işlerimiz"
+    "works": "Biziň Işlerimiz",
+"menuContent1": "Biz 2020-nji ýylda döredilen, häzirki zaman ýokary tehnologiýaly, takyk we ýokary öndürijilikli enjamlar bilen enjamlaşdyrylan hem-de bu ugurda azyndan 10 ýyl tejribesi bolan hünärmenlerden ybarat ýaş kompaniýa.\nBiz uly we ygtybarly müşderiler bilen uzak möhletleýin hyzmatdaşlyga gönükdirilen kompaniýa bolup, öz tarapymyzdan önümiň deňi-taýy bolmadyk hilini we Türkmenistanyň islendik ýerine öz wagtynda eltip bermek kepilligini berýäris.\nIlkinji nobatda, biz önümçilik kompaniýasy bolup: müşderilerimize hödürleýän ähli önümlerimiz öz zawodlarymyzyň içinde öndürilýär.\nÖnümçilik prosesi materiallaryň üpjünçiliginden başlap, müşderiniň ammaryna eltilmegine çenli doly gözegçilikde saklanylýar."
   },
   "stages": {
     "brief": "BRIF",
     "design": "DIZAÝN BÖLÜMI",
     "approval": "MAKULLAMA",
     "realisation": "AMALA AŞYRMA"
-  }
+  },
+ "services": {
+    "title1": "LED ekranlar",
+    "description1": "LED ekranlar, P2, P2.5, P3, P4, P5, P8, P10. Ekranyň her hili görnüşini we çylşyrymlylygyny öndürmek mümkinçiligi. Ip65 gorag derejesi. Daşky täsirlere garşy durnukly.",
+    
+    "title2": "LED modullar",
+    "description2": "LED modullaryndan abatlanan harfler, wideo wideo wideo effektlerini we beýleki wideo effektlerini ýerine ýetirmek mümkinçiligi bilen.",
+    
+    "title3": "LED ekranlar (ýerde)",
+    "description3": "Ýerler üçin LED ekranlar, P4, P5, P8, P10. Uzyn wagtlyk we durnukly ekran. IP65 gorag derejesi. Daşky täsirlere garşy durnukly.",
+    
+    "title4": "Proýeksiýa reklama | Mapping",
+    "description4": "Proýeksiýa reklama – bu täze görnüşli reklama bolup, projektor enjamlary arkaly duvarlara ýa-da binanyň fasadyna, içerki ýerlerde ýa-da beýleki her dürli ýerlerde wideo proýeksiýalary döretmek mümkinçiligini üpjün edýär.",
+    
+    "title5": "3D harplar",
+    "description5": "Her hili çylşyrymlylykda abatlanan 3D harpler. Çeşmeleriň dürli görnüşleri. Ýörite materiallaryň giň görnüşi. Her wagtda görünüşi bilen tapawutlanar. LED-lere giňeltmek bilen biz ýokary güýçlendirilen wideo ýa-da wideo effektlerini görkezýäris.",
+    
+    "title6": "Reňkli gutylar (laýtboks)",
+    "description6": "Reňkli gutylar ýa-da laýtbokslaryň daşky görnüşde dürli görnüşleri bolup, şäheriň göçüp-gidýän görküne esasy görnüşlerde yşyklandyrma döredýär. Gyşky şäher atmosferasynda peýdalanylan LED gutylar täzeden döredilen şäher bezegini görkezýär.",
+  
+    "title7": "Aýnalara we witrinlere aplikaýalar",
+    "description7": "Witrina we aýnalara dürli dizaýn çözgütleri we materiallar bilen bezegler. Vinyl ýüzlemeli ýerlerde iň meşhur ýerlerde peýdalanylan wideo effektlerine ýardam beriji aplikalar.",
+  
+    "title8": "Sergi Stendleri",
+    "description8": "Sergi stendleri, öňdebaryjy tehnologiýa bilen ýüzbe-ýüz maglumatlary paýlaşmagyň iň täze usulydyr. Sergi stendleriniň dizaýny we güýjüni internet gurnama görnüşinde üpjün etmek üçin netijeli usullara üns bermek.",
+  
+    "title9": "Tablisalar we görkeziji belgiler",
+    "description9": "Reklama tablisalaryna degişli ähli maglumatlar, ýagny web saýtlary we sergi stendleri bilen baglanyşykly dürli dizaýn çözgütlerini dürli ulanyjylar üçin üpjün edýär.",
+  
+    "title10": "Reklama stellasy",
+    "description10": "Reklama pilonlarynyň öndürilýän önümleriniň umumy görnüşi. Enjamlar we oturym tertibi baradaky maglumatlar ýakyn ýerlerde netijeli işlenip taýýarlanylýar.",
+  
+    "title11": "Bilbordlar",
+    "description11": "Reklama bilbordlarynyň ulanylyşy we döredilýän iş meýdanlary her ýerde ulanylýar.",
+  
+    "title12": "Modul suratlar we kanwas suratlar",
+    "description12": "Modul suratlary we materiallary ähli ulanyjylar üçin iň häzirki zaman görnüşde üpjün ediler.",
+  
+    "title13": "Şekilli figuralar",
+    "description13": "Şekilli figuralar üçin dizaýn çözgütleri ýa-da materiallar dürli ulanyjylar üçin üýtgeşik görnüşlerde.",
+  
+    "title14": "Poligrafiýa",
+    "description14": "Materiallaryň umumy görnüşleri, print görnüşindäki görnüşleri çylşyrymly materiallar we dürli gurnamalaryň üstünde işleýänler.",
+  
+    "title15": "Ultramelewşe rulon çap",
+    "description15": "Reklama rulon çaplar we ulgamlar ähli ulanyjylar üçin ýakyn ýurtlarda elýeterli bolup bilýär.",
+  
+    "title16": "Ýol belgileri",
+    "description16": "Lebizli Türkmen tarapyndan ähli ýurtlar üçin özboluşly materiallardan döredilen ýol belgileri we ýerler.",
+  
+    "title17": "Täze ýyl bezegleri (seýilgähler, agaçlar, guramalar)",
+    "description17": "",
+  
+    "title18": "Türkmenistanyň Garaşsyzlyk baýramyna bagyşlanan ýörite tematiki gurluşlar",
+    "description18": "Indiwidual tarapdan dizaýn edilen dürli görnüşde döredilen gürrüňler.",
+  
+    "title19": "Bitaraplyk baýramyna bagyşlanan ýörite tematiki gurluşlar",
+    "description19": ""
+},
+
+  "tags": {
+  "tag1": "Hemmesi",
+  "tag2": "Iş ýüzleri we markalaşdyrmak",
+  "tag3": "Witrinler",
+  "tag4": "Binalaryň fasadlary",
+  "tag5": "Çäre dekorasiýasy",
+  "tag6": "Interýer reklama",
+  "tag7": "Özboluşly taslamalar"
+},
+ "ourworks": {
+  "title1": "Hot Dost",
+  "title2": "Butchery Shop",
+  "title3": "Sawanna",
+  "title4": "Şazada Market",
+  "title5": "Louisiana",
+  "title6": "Täjir Coffee",
+  "title7": "Aurum",
+  "title8": "Şa Abbas",
+  "title9": "Vanilla",
+  "title10": "Kashlux",
+  "title11": "Neon Yşyklandyryş", 
+  "title12": "Binanyň fasadynyň dizaýny", 
+  "title13": "ЕВРАЗ",
+  "title14": "Diwar bezegi",
+  "title15": "KINZA cafe & bar",
+  "title16": "ZARA",
+  "title17": "Brand Shop",
+  "title18": "Cherry Kids",
+  "title19": "Sawanna",
+  "title20": "Et dükanynyň brendingi we interýer dizaýny", 
+  "title21": "Hezzet Market",
+  "title22": "MUSKUS",
+  "title23": "Merkez Market",
+  "title24": "Et dükanynyň brendingi we interýer dizaýny",
+  "title25": "Awtoban",
+  "title26": "WALLIFE",
+  "title27": "Kysmat Önümçilik",
+  "title28": "city Market",
+  "title29": "HOME Gallery",
+  "title30": "Maksatly Ösüş",
+  "title31": "Kysmat Önümçilik",
+  "title32": "Ariston",
+  "title33": "SILKOAT",
+  "title34": "Total",
+  "title35": "Dermanhana «Boý-bodron»",
+  "title36": "Dermanhana «Boý-bodron»",
+  "title37": "Dermanhana «Boý-bodron»",
+  "title38": "Binanyň fasadynyň dizaýny", 
+  "title39": "Interaktiw proýeksiýa installýasiýasy", 
+  "title40": "Binanyň fasadynyň dizaýny", 
+  "title41": "WATAN teleýaýlym kanaly - Studio", 
+  "title42": "Garagum Oteli",
+  "title43": "Garagum Oteli",
+  "title44": "Garagum Oteli",
+  "title45": "Garagum Oteli",
+  "title46": "Türkmenistanyň täze infrastrukturalaşdyryş taslamalarynyň sergisi", 
+  "title47": "Türkmenistanyň täze infrastrukturalaşdyryş taslamalarynyň sergisi", 
+  "title48": "Türkmenistanyň täze infrastrukturalaşdyryş taslamalarynyň sergisi", 
+  "title49": "Türkmenistanyň täze infrastrukturalaşdyryş taslamalarynyň sergisi", 
+  "title50": "Türkmenistanyň täze infrastrukturalaşdyryş taslamalarynyň sergisi", 
+  "title51": "Türkmenistanyň täze infrastrukturalaşdyryş taslamalarynyň sergisi", 
+  "title52": "Ugrukdyryjy we maglumat bellikleri",
+  "title53": "Ugrukdyryjy we maglumat bellikleri",
+  "title54": "Ugrukdyryjy we maglumat bellikleri",
+  "title55": "Ugrukdyryjy we maglumat bellikleri",
+  "title56": "Dermanhana «Boý-bodron»",
+  "title57": "Louisiana"
+},
+"page": {
+  "title1": "BRIF",
+  "description1": "Müşderi bilen brifi ylalaşmak, sargydy ara alyp maslahatlaşmak, ýerine ýetiriş möhletini kesgitlemek",
+
+  "title2": "DIZAÝN BOÝUNÇA BÖLÜM",
+  "description2": "Asyl pikirleri gözlemek, brife we estetik ölçeglere laýyk iň gowy pikirleri saýlap almak",
+
+  "title3": "TASSYKLAÝYŞ",
+  "description3": "Müşderi bilen ylalaşmak, üýtgetmeler we islegler girizmek",
+
+  "title4": "ÝERINE ÝETIRMEK",
+  "description4": "Müşderiniň ähli isleglerini göz öňünde tutup, sargydy ýerine ýetirmek",
+
+   "content": "Biz materiallaryň gowşurylyşyndan başlap, ýüklämä çenli ähli prosesi gözegçilik edýäris."
+},
+"capabilities": {
+  "title1": "Dizaýn studiýasy",
+  "description1": "Interýeriň we eksterýeriň 3D dizaýny, grafiki dizaýn, logotipiň, korporatiw stiliň, bukletiň, flýeriň, wizitkanyň, banneriň we ş.m. taýýarlanylmagy.",
+
+  "title2": "Çap ediş merkezi",
+  "description2": "Lazer çap, syçrayjy çap, ofset çap, 140m/sag çenli giňeldilen solvent çap, ekosolwent çap, UV çap.",
+
+  "title3": "Kesiji we oýma merkezi",
+  "description3": "Lazer kesiş, lazer oýma, frezer kesiş, 3D frezer oýma, plotter bilen kesmek.",
+
+  "title4": "Ýygnaýyş we gurnama sehi",
+  "description4": "Hiç bir mahabat gurluşy el bilen ýygnamak tapgyryndan geçip bilmeýär. Bu sehde tejribeli hünärmenler işleýärler, iň gowy el guraly we enjamlary ulanylýar."
+},
+"layout": {
+  "title": "Lebizli Turkmen",
+  "description": "Reklama we önümçilik kompaniýasy Türkmenistanda",
+
+  "content": "Lebizli Turkmen — Türkmenistanda ýerleşýän reklama we önümçilik kompaniýasy. Biz daşary reklama we POS-materiallary öndürmegiň doly tapgyryny hödürleýäris.",
+  "content2": "reklama-önümçilik kompaniýasy, daşary reklama, nyşanlaryň taýýarlanylmagy, POS-materiallary, Türkmenistanda reklama önümçiligi, brendleşdirilen önümler",
+  "content3": "Lebizli Turkmen — reklama-önümçilik kompaniýasy",
+  "content4": "Lebizli Turkmen Türkmenistanda reklama we önümçilik hyzmatlarynyň doly toplumyny hödürleýär.",
+  "content5": "Lebizli Turkmen daşary reklama we brendleşdirilen önümleriň öndürilmegini hödürleýär. Ynamlylyk, hil, wagtynda ýerine ýetiriş."
+},
+"contact": {
+ "location": "Aşgabat ş., Berkararlyk etraby, 2127 köçe (G. Gulyýew köçesi), 26A"
+}
 }

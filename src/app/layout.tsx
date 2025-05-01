@@ -86,7 +86,6 @@ export default function RootLayout({
           content="fehIcvCSrpAyzsP6Pmg-C5Kim9juRPYB7XroR8ZzoCQ"
         />
       </head>
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

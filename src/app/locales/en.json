@@ -1,15 +1,187 @@
 {
-    "menu": {
-      "company": "Advertising and Production Company",
-      "services": "Services",
-      "stages": "Work Stages",
-      "capabilities": "Production Capabilities",
-      "works": "Our Works"
-    },
-    "stages": {
-      "brief": "BRIEF",
-      "design": "DESIGN DEPARTMENT",
-      "approval": "APPROVAL",
-      "realisation": "REALISATION"
-    }
-  }
+  "menu": {
+    "company": "Advertising and Production Company",
+    "services": "Services",
+    "stages": "Work Stages",
+    "capabilities": "Production Capabilities",
+    "works": "Our Works",
+"menuContent1": "We are a young company founded in 2020, equipped with modern, high-tech, precision, and high-performance equipment, and staffed by experienced specialists with at least 10 years of expertise in the field.\nWe are focused on building long-term partnerships with major and reliable clients, and we guarantee unmatched product quality and on-time deliveries to any location within Turkmenistan.\nAbove all, we are a manufacturing company: everything we offer to our clients is produced in our own facilities.\nThe entire production process is strictly monitored — from material supply to final shipment to the client’s warehouse."
+  },
+  "stages": {
+    "brief": "BRIEF",
+    "design": "DESIGN DEPARTMENT",
+    "approval": "APPROVAL",
+    "realisation": "REALISATION"
+  },
+  "services": {
+"title1": "LED Screens",
+"description1": "Outdoor LED screens: P2, P2.5, P3, P4, P5, P8, P10. Customizable shapes and complexity. IP65 protection level. Resistant to environmental impacts.",
+
+"title2": "LED Modules",
+"description2": "Volumetric letters made of LED modules with the ability to display video clips and various video effects.",
+
+"title3": "Floor LED Screens",
+"description3": "Floor LED screens: P4, P5, P8, P10. Wear-resistant surface. IP65 protection level. Resistant to environmental conditions.",
+
+"title4": "Projection Advertising | Mapping",
+"description4": "Projection advertising is a new type of advertising that creates promotional video projections using projection equipment on walls, building facades, interior spaces, or any suitable surface.",
+
+"title5": "3D Letters",
+"description5": "Volumetric letters of any complexity. Various lighting options. Wide selection of materials. Highly visible day and night. Our signs use high-brightness LEDs for maximum visibility, even during the daytime. Long lifespan and energy-efficient.",
+
+"title6": "Lightboxes",
+"description6": "Lightboxes are one of the most popular types of outdoor advertising, becoming an integral part of urban landscapes. In the evening, illuminated information stands and signs create a unique city atmosphere.",
+
+"title7": "Window and Showcase Applications",
+"description7": "Wide selection of design solutions and materials. Window applications enhance a store's brightness and individuality. Made from vinyl films that are waterproof and resistant to snow, sunlight, rain, and other environmental effects without changing over time.",
+
+"title8": "Exhibition Stands",
+"description8": "EXHIBITION STANDS: TYPES, PRODUCTION, ADVANTAGES. Despite the growth of virtual technologies and online optimization, exhibitions remain one of the most effective tools for promoting goods and services.",
+
+"title9": "Signs and Direction Boards",
+"description9": "Advertising signs used for informing people about the location of certain objects. They are applied for streets, monuments, social institutions, and for advertising organizations (e.g., directions to shops, businesses, and firms).",
+
+"title10": "Advertising Pylons",
+"description10": "Advertising pylons are one- or two-sided structures made from a metal frame, acrylic glass, and internal LED lighting. They are durable, weather-resistant, and highly effective in crowded places such as malls and business centers.",
+
+"title11": "Billboards",
+"description11": "A billboard is a large-format board with a metal frame placed along busy roads, on rooftops, building facades, etc. Billboards are most effective when displaying a large image with a slogan or contact information.",
+
+"title12": "Modular and Canvas Paintings",
+"description12": "We create modular paintings based on your photos, making your home’s atmosphere unique and personal. A modular canvas painting becomes an unforgettable gift for loved ones, embedding sincere feelings into the artwork.",
+
+"title13": "Life-size Figures",
+"description13": "Life-size figures of various types are commonly found in malls, entertainment centers, and public events, effectively drawing the attention of potential customers.",
+
+"title14": "Printing Services",
+"description14": "Design and printing of business cards on matte and glossy papers. Single-sided and double-sided printing. Production of stickers on self-adhesive film. Labels are actively used for product identification and advertising.",
+
+"title15": "Roll UV Printing",
+"description15": "We offer UV printing services on roll materials. Designers create layouts according to client requests, and production starts after approval. With our own equipment, we offer convenient, affordable services. For first-time clients, we provide full support.",
+
+"title16": "Road Signs",
+"description16": "Our road signs are made from galvanized steel, aluminum, plastic, and reflective films, ensuring durability against aggressive environmental impacts, including corrosion. Custom designs and repair services are available.",
+
+"title17": "New Year Decorations (Parks, Trees, Organizations)",
+"description17": "",
+
+"title18": "Thematic Decorations for Independence Day Parade",
+"description18": "Preparation for the Independence Day parade in Turkmenistan. Car decorations of any complexity. Production of models, balloons, and more.",
+
+"title19": "Thematic Decorations for Neutrality Day",
+"description19": ""
+},
+"tags": {
+"tag1": "All",
+"tag2": "Signage and Branding",
+"tag3": "Displays",
+"tag4": "Building Facades",
+"tag5": "Event Decoration",
+"tag6": "Interior Advertising",
+"tag7": "Special Projects"
+},
+"ourworks": {
+"title1": "Hot Dost",
+"title2": "Butchery Shop",
+"title3": "Sawanna",
+"title4": "Shazada Market",
+"title5": "Louisiana",
+"title6": "Tajir Coffee",
+"title7": "Aurum",
+"title8": "Sha Abbas",
+"title9": "Vanilla",
+"title10": "Kashlux",
+"title11": "Neon light design",  
+"title12": "Building Facade Design", 
+"title13": "ЕВРАЗ",
+"title14": "Wall decoration", 
+"title15": "KINZA cafe & bar",
+"title16": "ZARA",
+"title17": "Brand Shop",
+"title18": "Cherry Kids",
+"title19": "Sawanna",
+"title20": "Meat Shop Branding and Interior Design", 
+"title21": "Hezzet Market",
+"title22": "MUSKUS",
+"title23": "Merkez Market",
+"title24": "Meat Shop Branding and Interior Design", 
+"title25": "Awtoban",
+"title26": "WALLIFE", 
+"title27": "Kysmat Onumchilik",
+"title28": "city Market",
+"title29": "HOME Gallery",
+"title30": "Maksatly Osush",
+"title31": "Kysmat Onumchilik",
+"title32": "Ariston",
+"title33": "SILKOAT",
+"title34": "Total",
+"title35": "Pharmacy 'Boy-Bodron'",
+"title36": "Pharmacy 'Boy-Bodron'",
+"title37": "Pharmacy 'Boy-Bodron'",
+"title38": "Building Facade Design", 
+"title39": "Interactive Projection Display", 
+"title40": "Building Facade Design", 
+"title41": "TV Channel 'WATAN' - Studio", 
+"title42": "Garagum Oteli",
+"title43": "Garagum Oteli",
+"title44": "Garagum Oteli",
+"title45": "Garagum Oteli",
+"title46": "Exhibition of Turkmenistan's New Infrastructure Development", 
+"title47": "Exhibition of Turkmenistan's New Infrastructure Development", 
+"title48": "Exhibition of Turkmenistan's New Infrastructure Development", 
+"title49": "Exhibition of Turkmenistan's New Infrastructure Development", 
+"title50": "Exhibition of Turkmenistan's New Infrastructure Development", 
+"title51": "Exhibition of Turkmenistan's New Infrastructure Development", 
+"title52": "Directional and informational signs",
+"title53": "Directional and informational signs",
+"title54": "Directional and informational signs",
+"title55": "Directional and informational signs",
+"title56": "Pharmacy 'Boy-Bodron'",
+"title57": "Louisiana"
+},
+"page": {
+"title1": "BRIEF",
+"description1": "Brief approval with the client, order discussion, setting a deadline",
+
+"title2": "DESIGN DEPARTMENT",
+"description2": "Searching for original ideas, selecting the best ideas based on the brief and aesthetic criteria",
+
+"title3": "APPROVAL",
+"description3": "Client approval, incorporating edits and wishes",
+
+"title4": "IMPLEMENTATION",
+"description4": "Fulfilling the order, taking into account all client wishes",
+
+ "content": "We control the entire process from material delivery to shipment."
+},
+"capabilities": {
+"title1": "Design Studio",
+"description1": "3D interior and exterior design, graphic design, logo development, corporate identity, brochures, flyers, business cards, banners, and more.",
+
+"title2": "Printing Center",
+"description2": "Laser printing, inkjet printing, offset printing, large-format solvent printing up to 140m/h, eco-solvent printing, UV printing.",
+
+"title3": "Cutting and Engraving Center",
+"description3": "Laser cutting, laser engraving, CNC milling, 3D CNC engraving, plotter cutting.",
+
+"title4": "Assembly and Installation Workshop",
+"description4": "No advertising structure can avoid the stage of manual assembly. Our workshop is staffed by experienced professionals using the best hand tools and machines."
+},
+"layout": {
+"title": "Lebizli Turkmen",
+"description": "Advertising and production company in Turkmenistan",
+
+"content": "Lebizli Turkmen is an advertising and production company based in Turkmenistan. We offer a full cycle of advertising production services, from outdoor advertising to POS materials.",
+
+"content2": "advertising and production company, outdoor advertising, signboard production, POS materials, advertising production in Turkmenistan, branded products",
+
+"content3": "Lebizli Turkmen — advertising and production company",
+
+"content4": "Lebizli Turkmen offers a full range of advertising and production services in Turkmenistan.",
+
+"content5": "Lebizli Turkmen provides production of outdoor advertising and branded products. Reliability, quality, timely delivery."
+},
+"contact": {
+"location": "Ashgabat, Berkararlyk District, 2127 Street (G. Gulyyev), 26A"
+}
+}

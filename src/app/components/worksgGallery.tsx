@@ -1,9 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { tags, works } from "../worksdata";
+import { getTags, getWorks } from "../worksdata";
+import { useLanguage } from "../context/langContext";
 
 export default function Gallery() {
+  const { t } = useLanguage(); // Получаем данные из контекста
+  const tags = getTags(t); // Генерируем теги
+  const works = getWorks(t); // Генерируем работы
+
   const [selectedTag, setSelectedTag] = useState("все");
 
   const filteredWorks =
@@ -12,14 +17,14 @@ export default function Gallery() {
       : works.filter((work) => work.tags.includes(selectedTag));
 
   return (
-    <section className="p-4 overflow-y-auto max-h-[calc(100vh-150px)">
+    <section className="p-4 overflow-y-auto max-h-[calc(100vh-150px)]">
       <div className="flex flex-wrap gap-2 mb-6">
         {tags.map((tag) => (
           <button
             key={tag}
             onClick={() => setSelectedTag(tag)}
             className={`px-3 py-1 rounded-full border transition ${
-              selectedTag === tag ? "white font-thin" : "font-thin"
+              selectedTag === tag ? "bg-white font-thin" : "font-thin"
             }`}
           >
             {tag}
